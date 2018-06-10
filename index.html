@@ -8,14 +8,35 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Random Quote Generator</title>
 </head>
 
 <body>
-
+  <div class="quote-box">
+    <div class="quote-text">
+      <i class="fa fa-quote-left"></i>
+      <span id="text"></span>
+      <div class="quote-author">
+        -
+        <span id="author"></span>
+        <div class="quote-button">
+          <a class="button" id="tweet-quote" title="Tweet this quote!" target="_blank">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <button class="button" id="new-quote">New quote</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="quote-footer">
+    by
+    <a href="https://www.freecodecamp.com/coderpradp/" target="_blank">coderpradp</a>
+  </div>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

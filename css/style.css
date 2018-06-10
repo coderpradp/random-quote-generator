@@ -1,0 +1,95 @@
+* {
+	vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+div {
+	position: relative;
+	z-index: 2;
+}
+
+body {
+	background-color: #333;
+	color: #333;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:400;
+}
+
+.quote-box {
+	border-radius: 3px;
+	background-color: white;
+	position: relative;
+	margin: 10% auto auto auto;
+	padding: 40px 50px;
+	display: table;
+	width: 450px;
+}
+
+.quote-box .quote-text {
+	width: 450px;
+	font-size: 2em;
+	text-align: center;
+}
+
+.quote-box .quote-author {
+	width: 450px;
+	text-align: right;
+	font-size: 0.7em;
+	margin-top: 10px;
+}
+
+.quote-box .quote-button {
+	width: 450px;
+	margin-top: auto;
+	display: block;
+}
+
+.quote-box .quote-button .button {
+	height: 44px;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	background-color: #333;
+	outline: none;
+	font-size: 0.85em;
+	padding: 8px 18px 6px 18px;
+	margin-top: 30px;
+	opacity: 1;
+	cursor: pointer;
+}
+
+.quote-box .quote-button.button:hover {
+	opacity: 0.9;
+}
+
+.quote-box .quote-button .button#tweet-quote, .quote-box .quote-button .button#facebook-quote {
+	float: left;
+	padding: 0px;
+	padding-top: 8px;
+	text-align: center;
+	font-size: 1.2em;
+	margin-right: 10px;
+	height: 44px;
+	width: 46px;
+}
+
+.quote-box .quote-button .button#new-quote {
+	float: right;
+}
+
+.quote-footer {
+	width: 450px;
+	text-align: center;
+	display: block;
+	margin: 15px auto 30px auto;
+	font-size: 0.8em;
+	color: #fff;
+}
+
+.quote-footer a {
+	font-weight: 500;
+	text-decoration: none;
+	color: #fff;
+}
