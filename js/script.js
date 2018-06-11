@@ -76,7 +76,7 @@ function success(response) {
 function getQuote() {
   $.ajax({
     url:
-      'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=?',
+      'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=?',
     dataType: 'jsonp',
     jsonpCallback: 'success'
   })
