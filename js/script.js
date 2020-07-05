@@ -18,8 +18,8 @@ var currentAuthor = ''
 function success(response) {
   // console.log('Response', response)
   var r = response
-  currentQuote = $(r[0].content).text()
-  currentAuthor = r[0].title
+  currentQuote = $(r[0].content.rendered).text()
+  currentAuthor = r[0].title.rendered
   // console.log('Current Quote', currentQuote)
   // console.log('Current Author', currentAuthor)
   var color = Math.floor(Math.random() * colors.length)
@@ -76,7 +76,7 @@ function success(response) {
 function getQuote() {
   $.ajax({
     url:
-      'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=?',
+      'https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand&posts_per_page=1&_jsonp=?',
     dataType: 'jsonp',
     jsonpCallback: 'success'
   })
